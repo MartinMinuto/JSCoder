@@ -1,4 +1,3 @@
-
 let Teclado = 500;
 let Mouse = 300;
 let Monitor = 600;
@@ -59,34 +58,79 @@ function SumarPrecios(precio1, precio2){
     console.log("El Total es "+resultado);
 }
 
+const Procesadores = [
+    {
+     id:1,
+     nombre:"I3 9gen",
+     marca:"Intel",
+     precio:"$900",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:2,
+     nombre:"I3 10gen",
+     marca:"Intel",
+     precio:"$950",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:3,
+     nombre:"I3 11gen",
+     marca:"Intel",
+     precio:"$1100",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:4,
+     nombre:"I5 9gen",
+     marca:"Intel",
+     precio:"$1050",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:5,
+     nombre:"I5 10gen",
+     marca:"Intel",
+     precio:"$1140",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:6,
+     nombre:"I5 11gen",
+     marca:"Intel",
+     precio:"$1350",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:7,
+     nombre:"Ryzen 3",
+     marca:"AMD",
+     precio:"$890",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:8,
+     nombre:"Ryzen 5",
+     marca:"AMD",
+     precio:"$1250",
+     stock:"Sin stock" // De momento
+    },
+    {
+     id:9,
+     nombre:"Ryzen 7",
+     marca:"AMD",
+     precio:"$1500",
+     stock:"Sin stock" // De momento
+    }
+ ];
 
-  //Quiero hcer que esta funcion me devulva el total de los iteam que consulto por consola una ves esta termine!
+ Procesadores.forEach((Procesadores) => console.log(Procesadores.nombre, Procesadores.precio));
 
-  
-/*
- let PrecioFinal =SumarPrecios;
-
-    switch (PrecioFinal) {
-        case (SumarPrecios(Teclado,Mouse)):
-           console.log("Vale todo $800")
-            break;
-        case (SumarPrecios(Teclado,Monitor)):
-           console.log("Vale todo $1100")
-            break;
-        case (SumarPrecios(Teclado,MousePad)):
-           console.log("Vale todo $550")
-            break;
-         case (SumarPrecios(Teclado,Procesador)):
-           console.log("Vale todo $1000")
-            break;  
-        case (SumarPrecios(Teclado,Gabinete)):
-           console.log("Vale todo $700")
-            break;  
-                
-    
-        default:
-            break;
+    let BuscarProcesador = prompt("Que producto estas buscando?")
+    const resultado = Procesadores.filter((Procesador)=> Procesador.marca.includes("Intel"))
+    if (resultado != undefined){
+       console.log(resultado);
+    }else{
+       console.log("No se encuentra el procesador solicitado!");
     }
 
- console.log(PrecioFinal);
-*/
