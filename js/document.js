@@ -4,14 +4,6 @@ localStorage.setItem("ano","2022")
 
 
 
-
-
-
-
-
-
-
-
 /*let Teclado = 500;
 let Mouse = 300;
 let Monitor = 600;
