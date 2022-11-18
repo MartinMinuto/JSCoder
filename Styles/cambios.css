@@ -5,6 +5,7 @@
 
 body{
     background-color: rgb(184, 184, 184);
+    overflow-x: none;
 }
 
 
@@ -29,14 +30,25 @@ body{
     gap: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    overflow-x: none;
 }
 
-.col-4{
-    gap: 50px;
-}
 
 .img{
     width: 100vw;
     height: 50vh;
     object-fit:cover;
+}
+
+#carta{
+    gap: 5px;
+    display: flex;
+    overflow:auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+.row{
+width: 98%;
 }
